@@ -1,0 +1,311 @@
+/*
+file:///E:/%E5%85%B6%E4%BB%96/Area/P-A/library/index.html
+file:///E:/%E5%85%B6%E4%BB%96/Area/P-A/library/contents/pinyin.html
+*/
+/* tite */
+article h1{
+	border-top: 1px solid #A0F;
+	border-bottom: 1px solid #A0F;
+	clear: both;
+}
+article h2,article h3,article h4{
+	border-top: 1px solid #3264FF;
+	border-bottom: 1px solid #3264FF;
+	clear: both;
+	text-align: center;
+}
+article h3 a{
+	color: #3264FF;
+}
+/* others style */
+.p-br{
+	margin: 0;
+	text-indent: 0;
+	padding-left: 2em;
+	margin-block-start: 0.3em;
+	margin-block-end: 0.3em;
+}
+article{
+	font-family: miui,"Microsoft YaHei", "WenQuanYi Micro Hei", system-ui,-apple-system,"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol, "MiSans";
+}
+.size-more{
+	color: #3232FF;
+}
+/* book-box */
+.book-box-section{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.book-box{
+	margin: 1.5% 0.3%;
+	color: #000;
+	background: linear-gradient(45deg, #ff3c41, #fc0, #0ebeff);
+	width: 300px;
+	height: 200px;
+	border-radius: 0.5em;
+	border: 1px solid #A0F;
+	box-shadow: 5px 5px 5px #CCC;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	font-family: "MiSans";
+	font-weight: 500;
+	transition: 1s all;
+}
+.book-box:hover{
+	background: linear-gradient(45deg, #ff3c41, #fc0, #0ebeff);
+	color: #333;}
+.book-box-cover{
+	width: 100px;
+	margin: 10px;
+	height: fit-content;
+	display: block;}
+.book-box-main{
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+.book-box-title-box{
+	margin: 5px;
+	display: block;
+	width: 170px;
+	overflow: hidden;
+	font-size: 16pt;
+}
+.book-box-title,.book-box-title-scroll{
+	font-family: "MiSans";
+	font-weight: 900;
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0px;
+}
+.book-box-title-scroll{
+	animation: text-scroll-x 2s infinite linear;
+}
+.book-box-info-box{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;}
+.book-box-author-box{
+	margin: 5px;
+	margin-right: 0px;
+	display: block;
+	width: 140px;
+	height: 22px;
+	float: left;
+	color: #555;
+	font-size:12pt;
+	overflow: hidden;
+}
+.book-box-author,.book-box-author-scroll{
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0px;
+}
+.book-box-author-scroll{
+	animation: text-scroll-x 2s infinite linear;
+}
+.book-box-finish{
+	margin: 5px;
+	margin-left: 0px;
+	display: block;
+	width: 30px;
+	text-align: right;
+	font-size:10pt;
+}
+.book-box-date{
+	margin: 5px;
+	margin-right: 0px;
+	display: block;
+	width: 85px;
+	font-size:8pt;
+}
+.book-box-size-box{
+	margin: 5px;
+	margin-left: 0px;
+	display: block;
+	width: 85px;
+	text-align: right;
+	overflow: hidden;
+	font-size:8pt;
+}
+.book-box-size,.book-box-size-scroll{
+	margin: 0px;
+	display: inline-block;
+	white-space: nowrap;
+}
+.book-box-size-scroll{
+	text-align: left;
+	margin: 0px;
+	display: inline-block;
+	white-space: nowrap;
+}
+.book-box-size-scroll:hover{
+	animation: text-scroll-x 3s infinite alternate linear;
+}
+.book-box-size-more{
+	color: #3232FF;
+	font-size:8pt;
+}
+.book-box-introduction-box{
+	margin: 5px;
+	margin-top: 0px;
+	width: 170px;
+	height: 100px;
+	overflow: hidden;
+}
+.book-box-introduction,.book-box-introduction-scroll{
+	display: inline-block;
+	color: #666;
+	font-size:8pt;
+	margin-top: 0px;
+}
+.book-box-introduction-scroll{
+	animation: text-scroll-y 10s infinite linear;
+}
+@keyframes text-scroll-x {
+	0% {
+		margin-left: 0;
+		transform: translate(0, 0);
+	}
+	10% {
+		margin-left: 0;
+		transform: translate(0, 0);
+	}
+	99% {
+		margin-left: 100%;
+		transform: translate(-100% , 0);
+	}
+	100% {
+		margin-left: 0;
+		transform: translate(0% , 0);
+	}
+}
+
+@keyframes text-scroll-y {
+	0% {
+		margin-top: 0;
+		transform: translate(0, 0);
+	}
+	10% {
+		margin-top: 0;
+		transform: translate(0, 0);
+	}
+	99% {
+		margin-top: 100%;
+		transform: translate(0 , -150%);
+	}
+	100% {
+		margin-top: 0;
+		transform: translate(0 , 0%);
+	}
+}
+/* nav */
+#nav-box{
+	overflow-y: scroll;}
+#nav-chb:checked ~ #nav-box{
+	right: -18px;}
+/* reader page */
+
+/*content in book*/
+
+.content1{
+	font-family: "MiSans";
+	font-weight: 900;
+	margin-left: 6%;
+}
+.content1-{
+	font-family: "MiSans";
+	font-weight: 900;
+	margin-left: 6%;
+	color: #AAA;
+}
+.content1-:hover{
+	font-family: "MiSans";
+	font-weight: 900;
+	margin-left: 6%;
+	color: #AAA;
+}
+.content2{
+	font-family: "MiSans";
+	font-weight: 700;
+	margin-left: 8%;
+}
+.content2-{
+	font-family: "MiSans";
+	font-weight: 700;
+	margin-left: 6%;
+	color: #AAA;
+}
+.content2-:hover{
+	font-family: "MiSans";
+	font-weight: 700;
+	margin-left: 6%;
+	color: #AAA;
+}
+.content3{
+	font-family: "MiSans";
+	font-weight: 500;
+	margin-left: 10%;
+}
+.content3-{
+	font-family: "MiSans";
+	font-weight: 500;
+	margin-left: 6%;
+	color: #AAA;
+}
+.content3-:hover{
+	font-family: "MiSans";
+	font-weight: 500;
+	margin-left: 6%;
+	color: #AAA;
+}
+
+/*pic*/
+
+.cover{
+    float: left;
+    width: 33%;
+    /*height: 20em;*/
+    margin-right: 2em;
+    margin-bottom: 2em;
+    border-style: solid solid solid solid;
+    border-width: 1px;
+    border-radius: 0.5em;
+    border: 1px solid #146eb4;
+    box-shadow: 5px 5px 5px #c7c7c7;
+}
+.title-pic{
+	width: 100%;
+}
+.book-pic{
+	width: auto;
+	clear: left;
+    box-shadow: 3px 3px 3px #c7c7c7;
+}
+
+/* 小部件 */
+
+/*info box : note*/
+.book-note{
+	text-decoration: none;
+	background: linear-gradient(90deg, #ff3c41, #fc0, #0ebeff);
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	background-size: 100% 3px;
+}
+.book-note-box{
+	width: 40%;
+	float: right;
+	margin: 0px 0px 0px 3%;
+}
+/*HTML代码
+<div class="desktop-only ib ib-green book-note-box"><div class="ib-left ib-green-h"><i class="fas fa-circle-info"></i></div><div class="ib-right"><big><b>注释: </b></big><br>含义。<br>作者注/注</div></div>
+<div class="mobile-only ib-green"><div class="ib-nd-top ib-green-h"><i class="fas fa-circle-info"></i></div><div class="ib-nd-bottom"><big><b>注释: </b></big><br>含义。<br>作者注/注</div></div>
+
+<font class="book-note">原文</font>
+*/
