@@ -2,7 +2,8 @@
 
 <p align="center"><a href="https://areaxj.github.io/parea/" target="_blank">访问</a></p>
 
-<p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/AreaXJ/parea?label=%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AreaXJ/parea?label=%E4%B8%8A%E6%AC%A1%E6%8F%90%E4%BA%A4"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/AreaXJ/parea"></p>
+<p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/AreaXJ/parea?label=%E4%BB%93%E5%BA%93%E5%A4%A7%E5%B0%8F"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AreaXJ/parea?label=%E4%B8%8A%E6%AC%A1%E6%8F%90%E4%BA%A4"> <!--<img alt="GitHub Release" src="https://img.shields.io/github/v/release/AreaXJ/parea">--> <img alt="GitHub License" src="https://img.shields.io/github/license/AreaXJ/parea">
+</p>
 
 <p align="center">愿为一片净土</p>
 
