@@ -2,125 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>魔法女世纪_110678534_云野图书馆_云野</title>
+	<title>魔法女世纪 - 秋灵瞭枉生 _云野图书馆_云野</title>
 	<link rel="stylesheet" type="text/css" href="../../../regular.css">
 	<script type="text/javascript" language="JavaScript" src="../../../jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" language="JavaScript" src="../../../regular.js"></script>
-	<script type="text/javascript" language="JavaScript" src="../../library_regular.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../library_regular.css">
+	<script type="text/javascript" language="JavaScript" src="../../library_regular.js"></script>
 </head>
 <body>
 	<header class="normal-header">
 		<img src="../../../media/icon-square.png" class="normal-header-icon">
 		<div class="normal-header-main">
 			<div class="normal-header-left">
-				<font class="normal-header-left-t1">云野图书馆</font><br>
-				<font class="normal-header-left-t2">Pregantain All Library</font>
+				<span class="normal-header-left-t1">云野图书馆</span><br>
+				<span class="normal-header-left-t2">Pregantain All Library</span>
 			</div>
 			<div class="normal-header-right">
 				<b>P-A LIB</b>
 			</div>
 		</div>
 	</header>
-	<header class="flex-header flex-header-hide" id="FlexHeader">
-		<div class="header-main">
-			<ul class="header-left">
-				<li class="header-icon-box header-left-li">
-					<a href="../../../index.html" title="云野"><img src="../../../media/icon.png" class="header-icon"></a>
-				</li>
-				<li class="header-left-li"><a href="../../../index.html">首页</a></li>
-				<li class="header-left-li"><a href="../../../wiki/index.html">百科</a></li>
-				<li class="header-left-li"><a href="../../../library/index.html" class="header-at">图书馆</a></li>
-				<li class="header-left-li"><a href="../../../files/index.html">资源</a></li>
-				<li class="header-left-li"><a href="../../../blog/index.html">博客</a></li>
-				<li class="header-left-li"><a href="https://pabbs.great-site.net"><i class="fas fa-link"></i>论坛</a></li>
-			</ul>
-		</div>
-	</header>
-	<nav class="page-nav">
-		<input type="checkbox" id="nav-chb">
-		<label for="nav-chb" class="page-nav-lable">菜单</label>
-		<div id="nav-box">
-			<ul>
-				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
-				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">贡献</a></li>
-				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">索引</a></li>
-				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">正文</a></li>
-				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
-				<li class="page-nav-li"></li>
-				<li class="page-nav-li"><a href="#chapter1" id="cnav1" class="page-nav-a">第一章 格瑞达女子魔法学院1</a></li>
-				<li class="page-nav-li"><a href="#chapter2" id="cnav2" class="page-nav-a">第二章 格瑞达女子魔法学院2</a></li>
-				<li class="page-nav-li"><a href="#chapter3" id="cnav3" class="page-nav-a">第三章 格瑞达女子魔法学院3</a></li>
-				<li class="page-nav-li"><a href="#chapter4" id="cnav4" class="page-nav-a">第四章 第一课：魔法之心1</a></li>
-				<li class="page-nav-li"><a href="#chapter5" id="cnav5" class="page-nav-a">第五章 第一课：魔法之心2</a></li>
-				<li class="page-nav-li"><a href="#chapter6" id="cnav6" class="page-nav-a">第六章</a></li>
-				<li class="page-nav-li"><a href="#chapter7" id="cnav7" class="page-nav-a">第七章</a></li>
-				<li class="page-nav-li"><a href="#chapter8" id="cnav8" class="page-nav-a">第八章</a></li>
-				<li class="page-nav-li"><a href="#chapter9" id="cnav9" class="page-nav-a">第九章</a></li>
-				<li class="page-nav-li"><a href="#chapter10" id="cnav10" class="page-nav-a">第十章</a></li>
-				<li class="page-nav-li"><a href="#chapter11" id="cnav11" class="page-nav-a">第十一章</a></li>
-				<li class="page-nav-li"><a href="#chapter12" id="cnav12" class="page-nav-a">第十二章</a></li>
-				<li class="page-nav-li"><a href="#chapter13" id="cnav13" class="page-nav-a">第十三章</a></li>
-			</ul>
-		</div>
-		<script>
-			$(function() {
-				$(window).scroll(function() {
-					//为页面添加页面滚动监听事件
-					var wst = $(window).scrollTop() //滚动条距离顶端值
-					console.log("滚动条距离顶端值:" + wst)
-					var len = 4;
-					for (i = 0; i < len; i++) { //加循环
-						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
-						var next = i + 1;
-						var itemOffsetTop = $("#section" + i).offset().top;
-						if (i === (len - 1)) {
-							var condition = itemOffsetTop <= wst;
-						} else {
-							var itemNextOffsetTop = $("#section" + next).offset().top;
-							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
-						}
-						if (condition) { //判断滚动条位置
-							$('a').removeClass("page-nav-at"); //清除c类
-							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
-						}
-					}
-				})
-				$('#nav a').click(function() {
-					$('#nav a').removeClass("c");
-					$(this).addClass("c");
-				});
-			});
-		</script>
-		<script>
-			$(function() {
-				$(window).scroll(function() {
-					//为页面添加页面滚动监听事件
-					var wst = $(window).scrollTop() //滚动条距离顶端值
-					console.log("滚动条距离顶端值:" + wst)
-					var len = 14;
-					for (i = 1; i < len; i++) { //加循环
-						console.log("chapter" + i + "距离顶端值:" + $("#chapter" + i).offset().top);
-						var next = i + 1;
-						var itemOffsetTop = $("#chapter" + i).offset().top;
-						if (i === (len - 1)) {
-							var condition = itemOffsetTop <= wst;
-						} else {
-							var itemNextOffsetTop = $("#chapter" + next).offset().top;
-							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
-						}
-						if (condition) { //判断滚动条位置
-							$("#cnav" + i).addClass("page-nav-at"); //给当前导航加c类
-						}
-					}
-				})
-				$('#nav a').click(function() {
-					$(this).addClass("c");
-				});
-			});
-		</script>
-		<a href="#" class="back-to-top"></a>
-	</nav>
 <div class="main-flex">
 <div class="main-box">
 	<section id="section0">
@@ -133,8 +34,16 @@
 			<div class="s-b-2-2">图书馆</div>
 		</div>
 		<div class="section0-bottom">不要金山银山，只要书山至此!</div>
-		<div class="section0-bottom-add">书目数量：<font class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></font>本</div>
+		<div class="section0-bottom-add">书目数量：<span class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></span>本</div>
 	</section>
+		<div class="setting-box">
+			<input type="checkbox" id="bookcard-chb" class="setting-chb">
+			<label for="bookcard-chb" class="bookcard-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="darkmode-chb" class="setting-chb">
+			<label for="darkmode-chb" class="darkmode-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="greenmode-chb" class="setting-chb">
+			<label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"></label>
+		</div>
 	<section id="section1">
 		<h1>贡献</h1>
 		<h2>提供书籍</h2>
@@ -148,25 +57,45 @@
 		<center><a href="../../contents/pinyin.html#a" target="_blank">A</a>|<a href="../../contents/pinyin.html#b" target="_blank">B</a>|<a href="../../contents/pinyin.html#c" target="_blank">C</a>|<a href="../../contents/pinyin.html#d" target="_blank">D</a>|<a href="../../contents/pinyin.html#e" target="_blank">E</a>|<a href="../../contents/pinyin.html#f" target="_blank">F</a>|<a href="../../contents/pinyin.html#g" target="_blank">G</a>|<a href="../../contents/pinyin.html#h" target="_blank">H</a>|<a href="../../contents/pinyin.html#i" target="_blank">I</a>|<a href="../../contents/pinyin.html#j" target="_blank">J</a>|<a href="../../contents/pinyin.html#k" target="_blank">K</a>|<a href="../../contents/pinyin.html#l" target="_blank">L</a>|<a href="../../contents/pinyin.html#m" target="_blank">M</a>|<a href="../../contents/pinyin.html#n" target="_blank">N</a>|<a href="../../contents/pinyin.html#o" target="_blank">O</a>|<a href="../../contents/pinyin.html#p" target="_blank">P</a>|<a href="../../contents/pinyin.html#q" target="_blank">Q</a>|<a href="../../contents/pinyin.html#r" target="_blank">R</a>|<a href="../../contents/pinyin.html#s" target="_blank">S</a>|<a href="../../contents/pinyin.html#t" target="_blank">T</a>|<a href="../../contents/pinyin.html#u" target="_blank">U</a>|<a href="../../contents/pinyin.html#v" target="_blank">V</a>|<a href="../../contents/pinyin.html#w" target="_blank">W</a>|<a href="../../contents/pinyin.html#x" target="_blank">X</a>|<a href="../../contents/pinyin.html#y" target="_blank">Y</a>|<a href="../../contents/pinyin.html#z" target="_blank">Z</a></center>
 	</section>
 	<section id="section3">
-		<div class="book-box-section">
-			<a class="book-box">
-				<img src="../cover/default.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title">魔法女世纪</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">秋灵瞭枉生</p></div>
-						<div class="book-box-finish">未知</div>
-						<div class="book-box-date">时间不详</div>
-						<div class="book-box-size-box"><p class="book-box-size">未计算<font class="book-box-size-more">+未计算</font></p></div>
+		<div class="bookcard-box">
+			<a class="bookcard" target="_blank">
+				<img src="../cover/default.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">魔法女世纪</p>
+							<p class="bookcard-author">秋灵瞭枉生</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
 					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction">-暂无简介-</p></div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-暂无简介-</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">39599<span class="booksize-more">+0</span></P>
+						<P class="bookcard-info2">时间不详</P>
+						<P class="bookcard-info2">未知</P>
+					</div>
 				</div>
 			</a>
 		</div>
-				<div class="desktop-only ib ib-blue"><div class="ib-left ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-right"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
-				<div class="mobile-only ib-blue"><div class="ib-nd-top ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-nd-bottom"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
-		<div>
-			<h1>目录</h1>
+			<h1><a name="book">魔法女世纪</a></h1>
+		<div class="bookinfo">
+			<img src="../cover/default.png" class="cover">
+			<div class="bookinfo-box">
+				书号：010862584<br>
+				作者：秋灵瞭枉生<br>
+				字符数：39599<span class="booksize-more">+0</span><br>
+				时间：未知<br>
+				更新状态：未知<br>
+				简介：<br>-暂无简介-
+			</div>
+		</div>
+				<div class="ib ib-yellow"><div class="ib-fi ib-yellow-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>警告: R-18</b></big><br>本文含有<b>色情</b>内容，未满18周岁请勿阅读。</div></a></div>
+				<div class="ib ib-blue"><div class="ib-fi ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
+		<div class="content-box">
+			<h2>目录</h2>
 			<a href="#chapter1" class="content1">第一章 格瑞达女子魔法学院1</a><br>
 			<a href="#chapter2" class="content1">第二章 格瑞达女子魔法学院2</a><br>
 			<a href="#chapter3" class="content1">第三章 格瑞达女子魔法学院3</a><br>
@@ -182,14 +111,7 @@
 			<a href="#chapter1" class="content1">第十三章</a><br>
 		</div>
 		<article>
-			<h1><a class="article-h1" name="book">魔法女世纪</a></h1>
-			<img src="../cover/default.png" class="cover">
-			书号：110678534<br>
-			作者：秋灵瞭枉生<br>
-			大小：未计算<font class="size-more">+未计算</font><br>
-			时间：未知<br>
-			更新状态：未知<br>
-<h2><a class="article-h2" id="chapter1">第一章 格瑞达女子魔法学院1</a></h2>
+<h2><a id="chapter1">第一章 格瑞达女子魔法学院1</a></h2>
 <p>紧紧的抱住双臂，暗暗的抚摸着左肩上格瑞达魔法标记，“想不到我这个平民窟里的少女也能进入帝国最神圣的魔法学院。”</p>
 <p>伴随随着马车的颠簸，心跳也紧跟着加快，全身的肌肉都不由自主的紧绷起来，第一次离开家，第一次坐这么豪华的马车，身上的旧衣服在同车的同伴中显得那么的显眼。</p>
 <p>“没办法，谁让我出生在平民窟里呢。”</p>
@@ -273,7 +195,7 @@
 <p>“你现在也将成为大肚子怪物！”罗菲不高兴了，她听见了秋灵小声的自言自语。</p>
 <p>“完美的讲诉！”</p>
 <p>三人的身后传来一声赞叹，顿时吓到了三个少女。</p>
-<h2><a class="article-h2" id="chapter2">第二章 格瑞达女子魔法学院2</a></h2>
+<h2><a id="chapter2">第二章 格瑞达女子魔法学院2</a></h2>
 <p>被吓到的三个少女转过身，看见面前站着一个年轻的东方女子。</p>
 <p>女子穿着白色魔法袍，挽着丸子似的发髻，手里拿着根教鞭，腋下夹着两本书，挺着个大肚子，一脸笑容的看着三个少女。</p>
 <p>看着三个人一脸惊讶的表情，女子知道自己吓到她们了，于是笑笑，率先自我介绍道：“我叫水铃铛，水系中级魔法师，也是这一届新生的导师，不出意外的话，也是你们三个的导师哦。”</p>
@@ -347,7 +269,7 @@
 <p>“狗儿，你又来了！”铃铛看着闪到身边来的火狗儿，一只手拍掉摸向自己肚子的贼手，一只手拎开拔在自己肩膀上的胳膊，顺手给火狗儿套上个水套，说，“你还是这样冒失，教务处长让你来当火系导师，就是怕你又像前几个月那样累的流产，现在又这样乱来，别枉费了教务处长的一番苦心！”</p>
 <p>“知道了，知道了！”火狗儿用一根指头戳破了铃铛给自己套的水套，有些低落得说，“一个个的都像老太婆一样，烦死了！”</p>
 <p>虽然嘴上不承认，但是火狗儿心底却涌起阵阵温暖，毕竟，大家都是真心关心自己的。</p>
-<h2><a class="article-h2" id="chapter3">第三章 格瑞达女子魔法学院3</a></h2>
+<h2><a id="chapter3">第三章 格瑞达女子魔法学院3</a></h2>
 <p>“狗儿，别捣乱了，先来帮她们三个登记入学吧！”贝蒂用她特有的萝莉音说着。</p>
 <p>“好勒！”只见一阵红色的身影飘过，火狗儿导师又窜到贝蒂导师的身边。</p>
 <p>只见她一手扶着贝蒂导师的椅背，另一只手在面前一划，空气中便出现了一个透明的记事板。</p>
@@ -422,7 +344,7 @@
 <p>所以，魔法师们不管在哪里，不管在做什么，都会在临盆之前赶回学院，毕竟在学院里，才是一个安全的所在！</p>
 <p>而产院，就是学院设立的专供魔法师们分娩生产的地方，也是整个学院戒备最森严的地方！</p>
 <p>在产院里的，可都是些毫无反抗之力的魔法师啊，不仅如此，此时的她们，还正经受着分娩的痛苦，阵痛的折磨！</p>
-<h2><a class="article-h2" id="chapter4">第四章 第一课：魔法之心1</a></h2>
+<h2><a id="chapter4">第四章 第一课：魔法之心1</a></h2>
 <p>“都到齐了吧？！”问话的是铃铛。</p>
 <p>这时的天刚蒙蒙亮，路边的路灯上的光精灵都还没睡觉，依然站在灯杆头上聊天，顺便用身上散发出的光辉照亮道路。</p>
 <p>透过光精灵散发出的淡淡的黄光，秋灵看见铃铛姐今天穿了一件连体的薄纱裙，在光线的照射下，美丽的酮体都若隐若现的透视出来。</p>
@@ -483,7 +405,7 @@
 <p>铃铛转身走到石门边，伸出手做了个请的姿势，示意众人进去。</p>
 <p>“导师，你不进去吗？”一个长得很乖巧的少女忍不住问铃铛。</p>
 <p>“我在这里等你们！”铃铛冷冷的说。</p>
-<h2><a class="article-h2" id="chapter5">第五章 第一课：魔法之心2</a></h2>
+<h2><a id="chapter5">第五章 第一课：魔法之心2</a></h2>
 <p>待到剩下得20个少女全部都穿过石门，众人的眼前突然一亮，突然就站在了一个大厅里。</p>
 <p>众人面前站着的是一群挺着大大小小肚子的魔法师，全都规规矩矩的穿着纯白色的魔法袍。</p>
 <p>“都到齐了？”为首一个魔法师问到。</p>
@@ -571,7 +493,7 @@
 <p>“挑一件吧。。。。”贝蒂走到墙边，手在墙上一抹，墙壁上就凭空出现了个巨大的衣橱。</p>
 <p>“啊～～这……”秋灵惊讶得嘴都合不上了。</p>
 <p>这些衣服。。。这些衣服。。。就是传说中的情趣衣吗？</p>
-<h2><a class="article-h2" id="chapter6">第六章</a></h2>
+<h2><a id="chapter6">第六章</a></h2>
 <p>正当自己处于惊讶中时，秋灵突然感觉身上一轻，低头一看顿时就“啊～！”地一声叫了出来。</p>
 <p>不知为什么，秋灵身上的衣服全都跑到了贝蒂手上，此时的秋灵，正全身赤裸地现在衣橱前面！</p>
 <p>“贝蒂姐～”秋灵一只手捂着自己的要害，一只手横在胸前挡住秀气的鸽乳，可怜兮兮地叫着贝蒂。</p>
@@ -635,7 +557,7 @@
 <p>秋灵听见贝蒂发出奇怪的声音，低头一看，原来贝蒂撩起纱裙咬在嘴里，痛苦得发出了“呜呜”的声音。</p>
 <p>此时的贝蒂，双腿大大地张开，半蹲着弯腰趴在秋灵身前，大肚子和一对丰满的乳房如三座大山一样吊在身前，形成一副绮丽得风光。</p>
 <p>但此时，不管是贝蒂，还是秋灵，都没有心情去欣赏自己和对方，因为贝蒂已经破水，即将进入分娩最终，也是最痛苦的阶段。。。。。</p>
-<h2><a class="article-h2" id="chapter7">第七章</a></h2>
+<h2><a id="chapter7">第七章</a></h2>
 <p>扶我去产台上……”等到了阵痛过去，贝蒂轻声地说。</p>
 <p>“哦，知道。”秋灵拉着贝蒂的手，一手架起贝蒂，一手环着贝蒂的腰，扶着贝蒂艰难地走向墙角的产台。</p>
 <p>说是扶，更似拖！</p>
@@ -744,7 +666,7 @@
 <p>进入教授模式的贝蒂说话很严肃，她抬头看见还抱着个婴儿站在面前的秋灵，贝蒂笑了笑，接着摇摇晃晃地站到地上，像揉面团似的揉着自己已经变得松松垮垮的大肚子。</p>
 <p>在肉眼可见的速度下，贝蒂的肚子迅速地缩小，变平，最终变成了盈盈一握的小腰！</p>
 <p>“走吧”接过秋灵怀里的孩子，看都没看一眼的就放在床上，然后拉着浑身赤裸还一身血污的秋灵走出了房间！</p>
-<h2><a class="article-h2" id="chapter8">第八章</a></h2>
+<h2><a id="chapter8">第八章</a></h2>
 <p>目送着贝蒂离开，秋灵也紧跟着走出门。</p>
 <p>“贝蒂姐呢？”走出房间门的秋灵发现原来得小房间里只有带自己进来的齐佳雯站在那里。</p>
 <p>“贝蒂导师吗？”齐佳雯问到。</p>
@@ -842,7 +764,7 @@
 <p>“没事，淹不死的！”风中悦恶作剧似的挽着罗菲的脖子，不顾她的挣扎，拉着罗菲一起跳下了悬崖！</p>
 <p>“啊～～～！”</p>
 <p>估计所有人都听见罗菲绝望的哭喊了！</p>
-<h2><a class="article-h2" id="chapter9">第九章</a></h2>
+<h2><a id="chapter9">第九章</a></h2>
 <p>抬头看着半空中跳下的一具具赤裸的酮体，火狗儿突然觉得把这个温泉搬回来，付出的辛苦都是值得的。</p>
 <p>当然，不远处正大喊大叫的挣扎的罗菲要另当别论！</p>
 <p>“好了，别叫了！”风中悦正努力地安抚罗菲，“你不会沉下去的！”</p>
@@ -921,7 +843,7 @@
 <p>水晶棺接受到紫荆花的照耀，也开始发光，同时在水晶棺的内部开始有液体弥漫出来，渐渐地淹没了躺在里面的少女们。</p>
 <p>液体发着荧光，许许多多星星点点的光点在其中游荡，就像夜幕中的繁星一样，时隐时现。</p>
 <p>“我们走吧，让她们躺上一天就好了！”</p>
-<h2><a class="article-h2" id="chapter10">第十章</a></h2>
+<h2><a id="chapter10">第十章</a></h2>
 <p>一天之后。</p>
 <p>一个破碎的水晶棺旁边，站着三个魔法师。</p>
 <p>一个是大着肚子不穿衣服的卢珊珊，</p>
@@ -1010,7 +932,7 @@
 <p>感觉自己好笨的秋灵笑了笑。</p>
 <p>格瑞达女子魔法学院！</p>
 <p>真是令人期待的地方啊！</p>
-<h2><a class="article-h2" id="chapter11">第十一章</a></h2>
+<h2><a id="chapter11">第十一章</a></h2>
 <p>“大家好，我叫水铃铛！是你们的魔法导师！”</p>
 <p>正式成为魔法师的第一堂课，铃铛再次做了自我介绍。</p>
 <p>台下12个学院，按照不同的宿舍，分成了三个小团体。</p>
@@ -1116,7 +1038,7 @@
 <p>紧接着，下体喷射出一股液体，淋了火狗儿一手。</p>
 <p>高潮过后，风中悦瘫软下来，整个人没有一丝力气，只是快速地喘着气。</p>
 <p>“火狗儿导师，你真是坏死了！”好不容易恢复过来的风中悦感觉火狗儿导师的手还在自己的下体作恶，呲怪地说。</p>
-<h2><a class="article-h2" id="chapter12">第十二章</a></h2>
+<h2><a id="chapter12">第十二章</a></h2>
 <p>“悦儿舒服吧！”火狗儿一边继续着手上的作恶，一边调戏着风中悦。</p>
 <p>“导师～～呜～～我～～有种～～有种好奇怪～～好奇怪的～～的感觉”风中悦快要起飞的感觉又来了，说话也不成句。</p>
 <p>风中悦嘴里呻吟着，身体也不自然地扭动。经过了一次高潮的她，身体极度敏感，在火狗儿的持续爱抚下，又一次站在了巅峰的边缘，身体的欲火处在爆发的边际，整个精神世界摇摇欲坠！</p>
@@ -1167,13 +1089,13 @@
 <p>魔法球里：</p>
 <p>这边，卢珊珊光着身子，一手扶着腰，一手握着法杖，身前有道漆黑的空间裂缝。</p>
 <p>另一边，散去一身礼服的墨灵儿露出了自己的身体，“S”形的窈窕曲线，酥胸微翘，小腹平坦。</p>
-<p>魔灵儿的肤色偏黑，也没什么光泽，透着一种不自然的病色。一眼看去，就知道不是阳光晒出的那种由内而外的健康小麦色，而是雪白的皮肤下，流动着黑色魔法元素而透露出来的暗淡光泽。</p>
+<p>墨灵儿的肤色偏黑，也没什么光泽，透着一种不自然的病色。一眼看去，就知道不是阳光晒出的那种由内而外的健康小麦色，而是雪白的皮肤下，流动着黑色魔法元素而透露出来的暗淡光泽。</p>
 <p>“啊～～”从未见过副院长身体的卢珊珊一声惊呼！</p>
 <p>“难怪从未见过副院长怀孕，原来如此！”</p>
-<p>顺着卢珊珊目光看去，只见魔灵儿下身光洁无毛，是个典型的“白虎”体质，不过，配上魔灵儿的肤色，叫“黑虎”倒是更恰当。</p>
+<p>顺着卢珊珊目光看去，只见墨灵儿下身光洁无毛，是个典型的“白虎”体质，不过，配上墨灵儿的肤色，叫“黑虎”倒是更恰当。</p>
 <p>如果仅仅如此，也不会令卢珊珊失色，因为她看见了更不可思议的东西！</p>
-<p>魔灵儿****口一直是张开的！或许应该叫产门更适合！</p>
-<p>只见魔灵儿的下体大大的张开着，一条绸带伸进墨灵儿的下体里，连接着魔灵儿的肚脐！</p>
+<p>墨灵儿****口一直是张开的！或许应该叫产门更适合！</p>
+<p>只见墨灵儿的下体大大的张开着，一条绸带伸进墨灵儿的下体里，连接着魔灵儿的肚脐！</p>
 <p>不！那不是绸带，那是脐带！</p>
 <p>墨灵儿在生下面前的小女孩后，用魔法固化了产程，使胎盘一直留在自己体内，连接着魔灵儿的身体！</p>
 <p>这样，墨灵儿就一直保持着拥有魔胎，魔胎离体后成为魔灵儿，一边成长，一边继续着魔胎的使命！</p>
@@ -1189,7 +1111,7 @@
 <p>“青出于蓝而胜于蓝！”卢珊珊并不生气，只是笑嘻嘻地说，“我的徒弟比我强，我高兴！”</p>
 <p>墨灵儿顿时脸就黑了，这卢珊珊明显在讽刺自己有个不肖徒弟！</p>
 <p>“我们的事还没完！”墨灵儿不准备和卢珊珊做口舌之争了，最近几年无休无止的阵痛已经严重地损害了自己的精神，没精力做这些无谓的事情了。</p>
-<h2><a class="article-h2" id="chapter13">第十三章</a></h2>
+<h2><a id="chapter13">第十三章</a></h2>
 <p>“悦儿姐，你醒啦！”迷糊中睁开眼睛的风中悦听见有人叫自己。</p>
 <p>“嗯……”刚苏醒的风中悦慵懒的呻吟一声。</p>
 <p>睁开眼，转头四周看看。</p>
@@ -1270,8 +1192,7 @@
 <p>反观露比，也没好到哪里去！</p>
 <p>由于风中悅飞了的同时，整个人猛的一抬身体，报复露比的那只手，一下子向前猛刺，整个拳头全部塞进了露比的下体！</p>
 <p>露比受到这突如其来的打击，直接就飞上了天，抬起头“啊～！”的一声，像是惨叫，更像极乐的呻吟，整个人抱着风中悅的屁股一前一后地抽搐着，伴随着风中悅的欢呼，一起达到极乐的高峰！</p>
-				<div class="desktop-only ib ib-purple-hl"><div class="ib-left ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-right"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div></div>
-				<div class="mobile-only ib-purple-hl"><div class="ib-nd-top ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-nd-bottom"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div></div>
+				<div class="ib ib-purple-hl"><div class="ib-fi ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div></div>
 		</article>
 	</section>
 </div>
@@ -1309,5 +1230,103 @@
 		</div>
 		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 云野.All Rights Reserved.<br>Copyright © Pregantain All Group.All rights reserved.<br>云野版权所有。保留所有权利。</noscript></div>
 	</footer>
+	<header class="flex-header flex-header-hide" id="FlexHeader">
+		<div class="header-main">
+			<ul class="header-left">
+				<li class="header-icon-box header-left-li">
+					<a href="../../../index.html" title="云野"><img src="../../../media/icon.png" class="header-icon"></a>
+				</li>
+				<li class="header-left-li"><a href="../../../index.html">首页</a></li>
+				<li class="header-left-li"><a href="../../../wiki/index.html">百科</a></li>
+				<li class="header-left-li"><a href="../../../library/index.html" class="header-at">图书馆</a></li>
+				<li class="header-left-li"><a href="../../../files/index.html">资源</a></li>
+				<li class="header-left-li"><a href="../../../blog/index.html">博客</a></li>
+				<li class="header-left-li"><a href="https://pabbs.great-site.net"><i class="fas fa-link"></i>论坛</a></li>
+			</ul>
+		</div>
+	</header>
+	<nav class="page-nav">
+		<input type="checkbox" id="nav-chb">
+		<label for="nav-chb" class="page-nav-lable">菜单</label>
+		<div id="nav-box">
+			<ul>
+				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
+				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">贡献</a></li>
+				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">索引</a></li>
+				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">正文</a></li>
+				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
+				<li class="page-nav-li"><a href="#chapter1" id="cnav1" class="page-nav-a">第一章 格瑞达女子魔法学院1</a></li>
+				<li class="page-nav-li"><a href="#chapter2" id="cnav2" class="page-nav-a">第二章 格瑞达女子魔法学院2</a></li>
+				<li class="page-nav-li"><a href="#chapter3" id="cnav3" class="page-nav-a">第三章 格瑞达女子魔法学院3</a></li>
+				<li class="page-nav-li"><a href="#chapter4" id="cnav4" class="page-nav-a">第四章 第一课：魔法之心1</a></li>
+				<li class="page-nav-li"><a href="#chapter5" id="cnav5" class="page-nav-a">第五章 第一课：魔法之心2</a></li>
+				<li class="page-nav-li"><a href="#chapter6" id="cnav6" class="page-nav-a">第六章</a></li>
+				<li class="page-nav-li"><a href="#chapter7" id="cnav7" class="page-nav-a">第七章</a></li>
+				<li class="page-nav-li"><a href="#chapter8" id="cnav8" class="page-nav-a">第八章</a></li>
+				<li class="page-nav-li"><a href="#chapter9" id="cnav9" class="page-nav-a">第九章</a></li>
+				<li class="page-nav-li"><a href="#chapter10" id="cnav10" class="page-nav-a">第十章</a></li>
+				<li class="page-nav-li"><a href="#chapter11" id="cnav11" class="page-nav-a">第十一章</a></li>
+				<li class="page-nav-li"><a href="#chapter12" id="cnav12" class="page-nav-a">第十二章</a></li>
+				<li class="page-nav-li"><a href="#chapter13" id="cnav13" class="page-nav-a">第十三章</a></li>
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					//为页面添加页面滚动监听事件
+					var wst = $(window).scrollTop() //滚动条距离顶端值
+					console.log("滚动条距离顶端值:" + wst)
+					var len = 4;
+					for (i = 0; i < len; i++) { //加循环
+						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
+						var next = i + 1;
+						var itemOffsetTop = $("#section" + i).offset().top;
+						if (i === (len - 1)) {
+							var condition = itemOffsetTop <= wst;
+						} else {
+							var itemNextOffsetTop = $("#section" + next).offset().top;
+							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
+						}
+						if (condition) { //判断滚动条位置
+							$('a').removeClass("page-nav-at"); //清除c类
+							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
+						}
+					}
+				})
+				$('#nav a').click(function() {
+					$('#nav a').removeClass("c");
+					$(this).addClass("c");
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					//为页面添加页面滚动监听事件
+					var wst = $(window).scrollTop() //滚动条距离顶端值
+					console.log("滚动条距离顶端值:" + wst)
+					var len = 14;
+					for (i = 1; i < len; i++) { //加循环
+						console.log("chapter" + i + "距离顶端值:" + $("#chapter" + i).offset().top);
+						var next = i + 1;
+						var itemOffsetTop = $("#chapter" + i).offset().top;
+						if (i === (len - 1)) {
+							var condition = itemOffsetTop <= wst;
+						} else {
+							var itemNextOffsetTop = $("#chapter" + next).offset().top;
+							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
+						}
+						if (condition) { //判断滚动条位置
+							$("#cnav" + i).addClass("page-nav-at"); //给当前导航加c类
+						}
+					}
+				})
+				$('#nav a').click(function() {
+					$(this).addClass("c");
+				});
+			});
+		</script>
+		<a href="#" class="back-to-top"></a>
+	</nav>
 </body>
 </html>

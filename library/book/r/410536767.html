@@ -2,84 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>束腰产子_410536767_云野图书馆_云野</title>
+	<title>束腰产子 - 佚名 _云野图书馆_云野</title>
 	<link rel="stylesheet" type="text/css" href="../../../regular.css">
 	<script type="text/javascript" language="JavaScript" src="../../../jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" language="JavaScript" src="../../../regular.js"></script>
-	<script type="text/javascript" language="JavaScript" src="../../library_regular.js"></script>
 	<link rel="stylesheet" type="text/css" href="../../library_regular.css">
+	<script type="text/javascript" language="JavaScript" src="../../library_regular.js"></script>
 </head>
 <body>
 	<header class="normal-header">
 		<img src="../../../media/icon-square.png" class="normal-header-icon">
 		<div class="normal-header-main">
 			<div class="normal-header-left">
-				<font class="normal-header-left-t1">云野图书馆</font><br>
-				<font class="normal-header-left-t2">Pregantain All Library</font>
+				<span class="normal-header-left-t1">云野图书馆</span><br>
+				<span class="normal-header-left-t2">Pregantain All Library</span>
 			</div>
 			<div class="normal-header-right">
 				<b>P-A LIB</b>
 			</div>
 		</div>
 	</header>
-	<header class="flex-header flex-header-hide" id="FlexHeader">
-		<div class="header-main">
-			<ul class="header-left">
-				<li class="header-icon-box header-left-li">
-					<a href="../../../index.html" title="云野"><img src="../../../media/icon.png" class="header-icon"></a>
-				</li>
-				<li class="header-left-li"><a href="../../../index.html">首页</a></li>
-				<li class="header-left-li"><a href="../../../wiki/index.html">百科</a></li>
-				<li class="header-left-li"><a href="../../../library/index.html" class="header-at">图书馆</a></li>
-				<li class="header-left-li"><a href="../../../files/index.html">资源</a></li>
-				<li class="header-left-li"><a href="../../../blog/index.html">博客</a></li>
-				<li class="header-left-li"><a href="https://pabbs.great-site.net"><i class="fas fa-link"></i>论坛</a></li>
-			</ul>
-		</div>
-	</header>
-	<nav class="page-nav">
-		<input type="checkbox" id="nav-chb">
-		<label for="nav-chb" class="page-nav-lable">菜单</label>
-		<div id="nav-box">
-			<ul>
-				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
-				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">贡献</a></li>
-				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">索引</a></li>
-				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">正文</a></li>
-				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
-			</ul>
-		</div>
-		<script>
-			$(function() {
-				$(window).scroll(function() {
-					//为页面添加页面滚动监听事件
-					var wst = $(window).scrollTop() //滚动条距离顶端值
-					console.log("滚动条距离顶端值:" + wst)
-					var len = 4;
-					for (i = 0; i < len; i++) { //加循环
-						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
-						var next = i + 1;
-						var itemOffsetTop = $("#section" + i).offset().top;
-						if (i === (len - 1)) {
-							var condition = itemOffsetTop <= wst;
-						} else {
-							var itemNextOffsetTop = $("#section" + next).offset().top;
-							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
-						}
-						if (condition) { //判断滚动条位置
-							$('a').removeClass("page-nav-at"); //清除c类
-							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
-						}
-					}
-				})
-				$('#nav a').click(function() {
-					$('#nav a').removeClass("c");
-					$(this).addClass("c");
-				});
-			});
-		</script>
-		<a href="#" class="back-to-top"></a>
-	</nav>
 <div class="main-flex">
 <div class="main-box">
 	<section id="section0">
@@ -92,8 +34,16 @@
 			<div class="s-b-2-2">图书馆</div>
 		</div>
 		<div class="section0-bottom">不要金山银山，只要书山至此!</div>
-		<div class="section0-bottom-add">书目数量：<font class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></font>本</div>
+		<div class="section0-bottom-add">书目数量：<span class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></span>本</div>
 	</section>
+		<div class="setting-box">
+			<input type="checkbox" id="bookcard-chb" class="setting-chb">
+			<label for="bookcard-chb" class="bookcard-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="darkmode-chb" class="setting-chb">
+			<label for="darkmode-chb" class="darkmode-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="greenmode-chb" class="setting-chb">
+			<label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"></label>
+		</div>
 	<section id="section1">
 		<h1>贡献</h1>
 		<h2>提供书籍</h2>
@@ -107,38 +57,50 @@
 		<center><a href="../../contents/pinyin.html#a" target="_blank">A</a>|<a href="../../contents/pinyin.html#b" target="_blank">B</a>|<a href="../../contents/pinyin.html#c" target="_blank">C</a>|<a href="../../contents/pinyin.html#d" target="_blank">D</a>|<a href="../../contents/pinyin.html#e" target="_blank">E</a>|<a href="../../contents/pinyin.html#f" target="_blank">F</a>|<a href="../../contents/pinyin.html#g" target="_blank">G</a>|<a href="../../contents/pinyin.html#h" target="_blank">H</a>|<a href="../../contents/pinyin.html#i" target="_blank">I</a>|<a href="../../contents/pinyin.html#j" target="_blank">J</a>|<a href="../../contents/pinyin.html#k" target="_blank">K</a>|<a href="../../contents/pinyin.html#l" target="_blank">L</a>|<a href="../../contents/pinyin.html#m" target="_blank">M</a>|<a href="../../contents/pinyin.html#n" target="_blank">N</a>|<a href="../../contents/pinyin.html#o" target="_blank">O</a>|<a href="../../contents/pinyin.html#p" target="_blank">P</a>|<a href="../../contents/pinyin.html#q" target="_blank">Q</a>|<a href="../../contents/pinyin.html#r" target="_blank">R</a>|<a href="../../contents/pinyin.html#s" target="_blank">S</a>|<a href="../../contents/pinyin.html#t" target="_blank">T</a>|<a href="../../contents/pinyin.html#u" target="_blank">U</a>|<a href="../../contents/pinyin.html#v" target="_blank">V</a>|<a href="../../contents/pinyin.html#w" target="_blank">W</a>|<a href="../../contents/pinyin.html#x" target="_blank">X</a>|<a href="../../contents/pinyin.html#y" target="_blank">Y</a>|<a href="../../contents/pinyin.html#z" target="_blank">Z</a></center>
 	</section>
 	<section id="section3">
-		<div class="book-box-section">
-			<a class="book-box">
-				<img src="../cover/default.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title">束腰产子</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">作者不详</p></div>
-						<div class="book-box-finish">未知</div>
-						<div class="book-box-date">2019-03-09</div>
-						<div class="book-box-size-box"><p class="book-box-size">未计算<font class="book-box-size-more">+0</font></p></div>
+		<div class="bookcard-box">
+			<a class="bookcard" target="_blank">
+				<img src="../cover/default.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">束腰产子</p>
+							<p class="bookcard-author">作者不详</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
 					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction">-暂无简介-</p></div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-暂无简介-</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">11390<span class="booksize-more">+0</span></P>
+						<P class="bookcard-info2">2019-03-09</P>
+						<P class="bookcard-info2">未知</P>
+					</div>
 				</div>
 			</a>
 		</div>
-				<div class="desktop-only ib ib-blue"><div class="ib-left ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-right"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
-				<div class="mobile-only ib-blue"><div class="ib-nd-top ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-nd-bottom"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
-				<div class="desktop-only ib ib-blue"><div class="ib-left ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-right"><big><b>内容警告: 其它</b></big><br>本文含有<b>可能引起部分人群不适的</b>内容。</div></div>
-				<div class="mobile-only ib-blue"><div class="ib-nd-top ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-nd-bottom"><big><b>内容警告: 其它</b></big><br>本文含有<b>可能引起部分人群不适的</b>内容。</div></div>
-		<div>
-			<h1>目录</h1>
+			<h1><a name="book">束腰产子</a></h1>
+		<div class="bookinfo">
+			<img src="../cover/default.png" class="cover">
+			<div class="bookinfo-box">
+				书号：410536767<br>
+				作者：未知<br>
+				字符数：11390<span class="booksize-more">+0</span><br>
+				时间：2019-03-09<br>
+				更新状态：未知<br>
+				简介：<br>-暂无简介-
+			</div>
+		</div>
+				<div class="ib ib-yellow"><div class="ib-fi ib-yellow-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>警告: R-18</b></big><br>本文含有<b>色情</b>内容，未满18周岁请勿阅读。</div></a></div>
+				<div class="ib ib-blue"><div class="ib-fi ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>警告: 分娩</b></big><br>本文含有<b>分娩</b>内容，可能引起部分人群不适。</div></div>
+				<div class="ib ib-blue"><div class="ib-fi ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>内容警告: 其它</b></big><br>本文含有<b>可能引起部分人群不适的</b>内容。</div></div>
+		<div class="content-box">
+			<h2>目录</h2>
 			<a href="#chapter1" class="content1">正文</a><br>
 		</div>
 		<article>
-			<h1><a class="article-h1" name="book">束腰产子</a></h1>
-			<img src="../cover/default.png" class="cover">
-			书号：410536767<br>
-			作者：未知<br>
-			大小：未计算<br>
-			时间：2019-03-09<br>
-			更新状态：未知<br>
-<h2><a class="article-h2" id="chapter1">正文</a></h2>
+<h2><a id="chapter1">正文</a></h2>
 <p>那一天我正在一处海滩上，这是有钱人和他们圈养的金丝雀专属的地方，我看见一位颇有名气的巴黎女人从旁边走过，这女人年轻，腰身纤细，婀娜多姿，风致韵绝，大裙摆，白手套，非常迷人，是巴黎风月场有名的交际花，男人没有一个不爱慕她的。</p>
 <p>我也不例外。</p>
 <p>不过，我也不知道她真实的姓名，姑且称她“丽娅”。</p>
@@ -266,8 +228,7 @@
 <p>只是苏珊的年纪大了，最近三年才怀上一胎，乳汁也愈发稀少，现在和她的大女儿朱莉和四女儿朱诺一起供给乳汁。</p>
 <p>人奶在贵族间是在再常见不过的滋补品，用来产乳的女佣无论是衣食还是地位都高于一般的女佣，就像正在生育第十胎的保姆苏珊和她刚分娩出一对双胞胎的女儿朱莉，灵巧的厨娘还会将人乳加工成点心乳酪和闺阁小姐们最喜欢的冰激凌，我的贵族母亲甚至酷爱用人奶沐浴。</p>
 <p>我的贵族母亲深信用乳汁沐浴会让她松垮的产道变的像少女一样紧致，把她大肚皮上密布的绛紫色妊纹变的像铅粉一样雪白，她想永葆青春，想永远具有无与伦比的性吸引力和生殖能力，她希望自己身上永远挂着一颗雪白滚圆的大肚子，重重的坠下去，在女仆的搀扶下艰难地岔着腿在城堡巡视，向仆人和奴隶们炫耀贵族夫人是如何的美丽，是如何的受宠，是如何的容易受孕。然后，用这颗饱满的摇摇欲坠的大肚子击败城堡外那些莺莺燕燕，把公爵栓得牢牢地夜度春宵。</p>
-				<div class="desktop-only ib ib-purple-hl"><div class="ib-left ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-right"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div></div>
-				<div class="mobile-only ib-purple-hl"><div class="ib-nd-top ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-nd-bottom"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div></div>
+				<div class="ib ib-purple-hl"><div class="ib-fi ib-purple-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>内容缺失</b></big><br>暂无相应内容，欢迎补充！</div><a name="vacancy_1"></a></div>
 		</article>
 	</section>
 </div>
@@ -305,5 +266,63 @@
 		</div>
 		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 云野.All Rights Reserved.<br>Copyright © Pregantain All Group.All rights reserved.<br>云野版权所有。保留所有权利。</noscript></div>
 	</footer>
+	<header class="flex-header flex-header-hide" id="FlexHeader">
+		<div class="header-main">
+			<ul class="header-left">
+				<li class="header-icon-box header-left-li">
+					<a href="../../../index.html" title="云野"><img src="../../../media/icon.png" class="header-icon"></a>
+				</li>
+				<li class="header-left-li"><a href="../../../index.html">首页</a></li>
+				<li class="header-left-li"><a href="../../../wiki/index.html">百科</a></li>
+				<li class="header-left-li"><a href="../../../library/index.html" class="header-at">图书馆</a></li>
+				<li class="header-left-li"><a href="../../../files/index.html">资源</a></li>
+				<li class="header-left-li"><a href="../../../blog/index.html">博客</a></li>
+				<li class="header-left-li"><a href="https://pabbs.great-site.net"><i class="fas fa-link"></i>论坛</a></li>
+			</ul>
+		</div>
+	</header>
+	<nav class="page-nav">
+		<input type="checkbox" id="nav-chb">
+		<label for="nav-chb" class="page-nav-lable">菜单</label>
+		<div id="nav-box">
+			<ul>
+				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
+				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">贡献</a></li>
+				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">索引</a></li>
+				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">正文</a></li>
+				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					//为页面添加页面滚动监听事件
+					var wst = $(window).scrollTop() //滚动条距离顶端值
+					console.log("滚动条距离顶端值:" + wst)
+					var len = 4;
+					for (i = 0; i < len; i++) { //加循环
+						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
+						var next = i + 1;
+						var itemOffsetTop = $("#section" + i).offset().top;
+						if (i === (len - 1)) {
+							var condition = itemOffsetTop <= wst;
+						} else {
+							var itemNextOffsetTop = $("#section" + next).offset().top;
+							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
+						}
+						if (condition) { //判断滚动条位置
+							$('a').removeClass("page-nav-at"); //清除c类
+							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
+						}
+					}
+				})
+				$('#nav a').click(function() {
+					$('#nav a').removeClass("c");
+					$(this).addClass("c");
+				});
+			});
+		</script>
+		<a href="#" class="back-to-top"></a>
+	</nav>
 </body>
 </html>
