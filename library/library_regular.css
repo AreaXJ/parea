@@ -2,294 +2,259 @@
 file:///E:/%E5%85%B6%E4%BB%96/Area/P-A/library/index.html
 file:///E:/%E5%85%B6%E4%BB%96/Area/P-A/library/contents/pinyin.html
 */
-/* tite */
+/* Style */
+/* library styles */
+:root{
+	--bookcard-bgcolor:#CEF;
+	--bookcard-color:#000;
+	--bookcard-author-color:#555;
+	--booksize-more-color:#00F;}
+.darkmode{
+	--bookcard-bgcolor:#004;
+	--bookcard-color:#C4C8F2;
+	--bookcard-author-color:#AEFD;
+	--booksize-more-color:#0D0;}
+/*article*/
+article{font-family: miui,"Microsoft YaHei", "WenQuanYi Micro Hei", system-ui,-apple-system,"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol, "MiSans";}
 article h1{
 	border-top: 1px solid #A0F;
 	border-bottom: 1px solid #A0F;
-	clear: both;
-}
+	clear: both;}
 article h2,article h3,article h4{
 	border-top: 1px solid #3264FF;
 	border-bottom: 1px solid #3264FF;
 	clear: both;
-	text-align: center;
+	text-align: center;}
+article h3{color: #3264FF;}
+article h3 a{color: #3264FF;}
+.content-box{
+	clear: both;
 }
-article h3 a{
-	color: #3264FF;
-}
-/* others style */
-.p-br{
-	margin: 0;
-	text-indent: 0;
-	padding-left: 2em;
-	margin-block-start: 0.3em;
-	margin-block-end: 0.3em;
-}
-article{
-	font-family: miui,"Microsoft YaHei", "WenQuanYi Micro Hei", system-ui,-apple-system,"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol, "MiSans";
-}
-.size-more{
-	color: #3232FF;
-}
-/* book-box */
-.book-box-section{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	flex-direction: row;
-}
-.book-box{
-	margin: 1.5% 0.3%;
-	color: #000;
-	background: linear-gradient(45deg, #ff3c41, #fc0, #0ebeff);
-	width: 300px;
-	height: 200px;
-	border-radius: 0.5em;
-	border: 1px solid #A0F;
-	box-shadow: 5px 5px 5px #CCC;
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-	font-family: "MiSans";
-	font-weight: 500;
-	transition: 1s all;
-}
-.book-box:hover{
-	background: linear-gradient(45deg, #ff3c41, #fc0, #0ebeff);
-	color: #333;}
-.book-box-cover{
-	width: 100px;
-	margin: 10px;
-	height: fit-content;
-	display: block;}
-.book-box-main{
-	width: 180px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: flex-start;
-}
-.book-box-title-box{
-	margin: 5px;
-	display: block;
-	width: 170px;
-	overflow: hidden;
-	font-size: 16pt;
-}
-.book-box-title,.book-box-title-scroll{
-	font-family: "MiSans";
-	font-weight: 900;
-	display: inline-block;
-	white-space: nowrap;
-	margin: 0px;
-}
-.book-box-title-scroll{
-	animation: text-scroll-x 2s infinite linear;
-}
-.book-box-info-box{
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-between;}
-.book-box-author-box{
-	margin: 5px;
-	margin-right: 0px;
-	display: block;
-	width: 140px;
-	height: 22px;
-	float: left;
-	color: #555;
-	font-size:12pt;
-	overflow: hidden;
-}
-.book-box-author,.book-box-author-scroll{
-	display: inline-block;
-	white-space: nowrap;
-	margin: 0px;
-}
-.book-box-author-scroll{
-	animation: text-scroll-x 2s infinite linear;
-}
-.book-box-finish{
-	margin: 5px;
-	margin-left: 0px;
-	display: block;
-	width: 30px;
-	text-align: right;
-	font-size:10pt;
-}
-.book-box-date{
-	margin: 5px;
-	margin-right: 0px;
-	display: block;
-	width: 85px;
-	font-size:8pt;
-}
-.book-box-size-box{
-	margin: 5px;
-	margin-left: 0px;
-	display: block;
-	width: 85px;
-	text-align: right;
-	overflow: hidden;
-	font-size:8pt;
-}
-.book-box-size,.book-box-size-scroll{
-	margin: 0px;
-	display: inline-block;
-	white-space: nowrap;
-}
-.book-box-size-scroll{
-	text-align: left;
-	margin: 0px;
-	display: inline-block;
-	white-space: nowrap;
-}
-.book-box-size-scroll:hover{
-	animation: text-scroll-x 3s infinite alternate linear;
-}
-.book-box-size-more{
-	color: #3232FF;
-	font-size:8pt;
-}
-.book-box-introduction-box{
-	margin: 5px;
-	margin-top: 0px;
-	width: 170px;
-	height: 100px;
-	overflow: hidden;
-}
-.book-box-introduction,.book-box-introduction-scroll{
-	display: inline-block;
-	color: #666;
-	font-size:8pt;
-	margin-top: 0px;
-}
-.book-box-introduction-scroll{
-	animation: text-scroll-y 10s infinite linear;
-}
-@keyframes text-scroll-x {
-	0% {
-		margin-left: 0;
-		transform: translate(0, 0);
-	}
-	10% {
-		margin-left: 0;
-		transform: translate(0, 0);
-	}
-	99% {
-		margin-left: 100%;
-		transform: translate(-100% , 0);
-	}
-	100% {
-		margin-left: 0;
-		transform: translate(0% , 0);
-	}
-}
-
-@keyframes text-scroll-y {
-	0% {
-		margin-top: 0;
-		transform: translate(0, 0);
-	}
-	10% {
-		margin-top: 0;
-		transform: translate(0, 0);
-	}
-	99% {
-		margin-top: 100%;
-		transform: translate(0 , -150%);
-	}
-	100% {
-		margin-top: 0;
-		transform: translate(0 , 0%);
-	}
-}
-/* nav */
-#nav-box{
-	overflow-y: scroll;}
-#nav-chb:checked ~ #nav-box{
-	right: -18px;}
-/* reader page */
-
 /*content in book*/
-
 .content1{
 	font-family: "MiSans";
 	font-weight: 900;
-	margin-left: 6%;
-}
+	margin-left: 6%;}
 .content1-{
 	font-family: "MiSans";
 	font-weight: 900;
 	margin-left: 6%;
-	color: #AAA;
-}
+	color: #AAA;}
 .content1-:hover{
 	font-family: "MiSans";
 	font-weight: 900;
 	margin-left: 6%;
-	color: #AAA;
-}
+	color: #AAA;}
 .content2{
 	font-family: "MiSans";
 	font-weight: 700;
-	margin-left: 8%;
-}
+	margin-left: 8%;}
 .content2-{
 	font-family: "MiSans";
 	font-weight: 700;
 	margin-left: 6%;
-	color: #AAA;
-}
+	color: #AAA;}
 .content2-:hover{
 	font-family: "MiSans";
 	font-weight: 700;
 	margin-left: 6%;
-	color: #AAA;
-}
+	color: #AAA;}
 .content3{
 	font-family: "MiSans";
 	font-weight: 500;
-	margin-left: 10%;
-}
+	margin-left: 10%;}
 .content3-{
 	font-family: "MiSans";
 	font-weight: 500;
 	margin-left: 6%;
-	color: #AAA;
-}
+	color: #AAA;}
 .content3-:hover{
 	font-family: "MiSans";
 	font-weight: 500;
 	margin-left: 6%;
-	color: #AAA;
-}
-
-/*pic*/
-
-.cover{
-    float: left;
-    width: 33%;
-    /*height: 20em;*/
-    margin-right: 2em;
-    margin-bottom: 2em;
-    border-style: solid solid solid solid;
-    border-width: 1px;
-    border-radius: 0.5em;
-    border: 1px solid #146eb4;
-    box-shadow: 5px 5px 5px #c7c7c7;
-}
+	color: #AAA;}
+/*picture*/
 .title-pic{
-	width: 100%;
-}
+	width: 100%;}
 .book-pic{
 	width: auto;
+	max-width: 100%;
+	max-height: calc(100vh - 100px);
 	clear: left;
-    box-shadow: 3px 3px 3px #c7c7c7;
+	box-shadow: 3px 3px 3px #c7c7c7;}
+/*others*/
+#nav-box{
+	width: 33%;
+	right: calc(10px - 33%);
+	overflow-y: auto;}
+.bookcard,#section2{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;}
+/* article parts */
+/*bookinfo*/
+.bookinfo{
+	display: flex;flex-wrap: nowrap;
 }
+.bookinfo-box{
+	padding: 0 3%;
+}
+.cover{
+	margin: 0 5%;
+	border-style: solid solid solid solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	border: 1px solid #146eb4;
+	box-shadow: 5px 5px 5px #c7c7c7;}
+@media (orientation: portrait){
+	.bookinfo{flex-direction: row;}
+	.cover{max-width: 50%;height: fit-content;max-height: 50vh;}
+}
+@media (orientation: landscape){
+	.bookinfo{flex-direction: row;}
+	.cover{max-width: 23%;height: fit-content;}
+}
+/* Tools小部件 */
+/* book card */
+.bookcard-chb-lable::before{content: "\F00B";font-family: "Font Awesome 6 Free";font-weight: 900;}
+#bookcard-chb:checked ~ .bookcard-chb-lable::before{content: "\F009";}
 
-/* 小部件 */
-
+.bookcard-box{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-direction: row;}
+.bookcard{
+	color: var(--bookcard-color);
+	background-color: var(--bookcard-bgcolor);
+	height: 200px;
+	box-shadow: 5px 5px 5px #CCC;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow: hidden;
+	font-family: "MiSans";
+	font-weight: 500;
+	transition: 1s all;}
+.bookcard:focus-visible{outline: none;}
+.bookcard-cover{
+	width: 100px;
+	margin: 10px;
+	height: fit-content;
+	display: block;}
+.bookcard-informationbox{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;width: calc(100% - 120px);}
+.bookcard-infobox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-between;
+	width: 100%;}
+.bookcard-rightmask{
+	width: 0;
+	box-shadow: var(--bookcard-bgcolor) -1px 0px 10px 10px, var(--bookcard-bgcolor) -1px 0px 30px 20px, var(--bookcard-bgcolor) -1px 0px 40px 20px;}
+.bookcard-info{
+	width: max-content;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;}
+.bookcard-title{
+	margin: 5px 0;
+	font-size: 16pt;
+	font-weight: 900;
+	max-height: 42pt;
+	white-space: nowrap;
+	overflow: hidden;}
+.bookcard-author{
+	margin: 0;
+	color: var(--bookcard-author-color);
+	font-size:12pt;
+	white-space: nowrap;
+	overflow: hidden;}
+.bookcard-introductionbox{
+	width: 100%;
+	height: calc(100% - 66px);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;}
+.bookcard-introduction{
+	width: 100%;height: 100%;
+	overflow: hidden;
+	margin: 0;
+	font-size: 9pt;}
+.bookcard-intromask{
+	width: 100%;
+	height: 0;
+	box-shadow: var(--bookcard-bgcolor) -1px 0px 15px 10px, var(--bookcard-bgcolor) -1px 0px 30px 20px;}
+.bookcard-info2box{
+	width: calc(100% - 10px);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	font-size: 10pt;
+	border-radius: 5px 0 0 0;}
+.bookcard-info2{
+	margin: 0;
+	width: inherit;max-width: fit-content;
+	/*background-color: #00F5;*/
+	border-radius: 3px;}
+.bookcard-info2:nth-child(2),.bookcard-info2:nth-child(3){
+	white-space: nowrap;
+	text-align: center;}
+.booksize-more{color: var(--booksize-more-color);}
+@media (orientation: portrait){
+	.bookcard{
+		margin: 25px 15px;
+		width: 300px;
+		border-radius: 15px;
+		border: 1px solid #A0F;
+	}
+}
+@media (orientation: landscape){
+	.bookcard{
+		margin: 0;
+		margin-top: -2px;
+		width: 90%;
+		border-radius: 0;
+		border: 2px solid #A0F;
+	}
+	.bookcard-box>:nth-child(1){
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.bookcard-box>:nth-last-child(1){
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+}
+.bookcard-gridmode .bookcard{
+		margin: 25px 15px;
+		width: 300px;
+		border-radius: 15px;
+		border: 1px solid #A0F;
+	}
+.bookcard-listmode .bookcard{
+		margin: 0;
+		margin-top: -2px;
+		width: 90%;
+		border-radius: 0;
+		border: 2px solid #A0F;
+	}
+.bookcard-listmode .bookcard-box>:nth-child(1){
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+.bookcard-listmode .bookcard-box>:nth-last-child(1){
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
 /*info box : note*/
 .book-note{
 	text-decoration: none;
@@ -298,14 +263,14 @@ article{
 	background-position: 0 100%;
 	background-size: 100% 3px;
 }
-.book-note-box{
-	width: 40%;
-	float: right;
-	margin: 0px 0px 0px 3%;
+@media (orientation: landscape){
+	.book-note-box{
+		width: 50%;
+		float: right;
+		margin: 0px 0px 0px 3%;}
 }
 /*HTML代码
-<div class="desktop-only ib ib-green book-note-box"><div class="ib-left ib-green-h"><i class="fas fa-circle-info"></i></div><div class="ib-right"><big><b>注释: </b></big><br>含义。<br>作者注/注</div></div>
-<div class="mobile-only ib-green"><div class="ib-nd-top ib-green-h"><i class="fas fa-circle-info"></i></div><div class="ib-nd-bottom"><big><b>注释: </b></big><br>含义。<br>作者注/注</div></div>
+				<div class="ib ib-green book-note-box"><div class="ib-fi ib-green-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>注释: 原文</b></big><br>内容。<br>（作者/云野 注）</div></div>
 
-<font class="book-note">原文</font>
+<span class="book-note">原文</span>
 */

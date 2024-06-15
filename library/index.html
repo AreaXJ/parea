@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>云野图书馆 - 愿集百家之言</title><!-- 云野 -->
+	<title>云野图书馆 - 愿集百家之言</title>
 	<link rel="stylesheet" type="text/css" href="../regular.css">
 	<script type="text/javascript" language="JavaScript" src="../jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" language="JavaScript" src="../regular.js"></script>
 	<link rel="stylesheet" type="text/css" href="library_regular.css">
+	<script type="text/javascript" language="JavaScript" src="library_regular.js"></script>
 </head>
 <body>
 	<header class="normal-header">
@@ -21,6 +22,207 @@
 			</div>
 		</div>
 	</header>
+<div class="main-flex">
+<div class="main-box">
+	<section id="section0">
+		<div class="section0-box1">
+			<div class="s-b-1-1">云野</div>
+			<div class="s-b-1-2">Pregantain All</div>
+		</div>
+		<div class="section0-box2">
+			<div class="s-b-2-1"><b>Lib</b></div>
+			<div class="s-b-2-2">图书馆</div>
+		</div>
+		<div class="section0-bottom">不要金山银山，只要书山至此!</div>
+		<div class="section0-bottom-add">书目数量：<font class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></font>本</div>
+	</section>
+		<div class="setting-box">
+			<input type="checkbox" id="bookcard-chb" class="setting-chb">
+			<label for="bookcard-chb" class="bookcard-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="darkmode-chb" class="setting-chb">
+			<label for="darkmode-chb" class="darkmode-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="greenmode-chb" class="setting-chb">
+			<label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"></label>
+		</div>
+	<section id="section1">
+		<h1>贡献</h1>
+		<h2>提供书籍</h2>
+		<p>联系方式：<br><script>connect_way("图书馆_提供书籍");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p>
+		<h2>书籍纠错/换源</h2>
+		<p>联系方式：<br><script>connect_way("图书馆_书籍纠错/换源");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p>
+	</section>
+	<section id="section2">
+		<h1>索引</h1>
+		<h2><a href="contents/pinyin.html" target="_blank">拼音排序</a></h2>
+		<p style="text-align: center;">
+		<a href="contents/pinyin.html#a" target="_blank">A</a>|
+		<a href="contents/pinyin.html#b" target="_blank">B</a>|
+		<a href="contents/pinyin.html#c" target="_blank">C</a>|
+		<a href="contents/pinyin.html#d" target="_blank">D</a>|
+		<a href="contents/pinyin.html#e" target="_blank">E</a>|
+		<a href="contents/pinyin.html#f" target="_blank">F</a>|
+		<a href="contents/pinyin.html#g" target="_blank">G</a>|
+		<a href="contents/pinyin.html#h" target="_blank">H</a>|
+		<a href="contents/pinyin.html#i" target="_blank">I</a>|
+		<a href="contents/pinyin.html#j" target="_blank">J</a>|
+		<a href="contents/pinyin.html#k" target="_blank">K</a>|
+		<a href="contents/pinyin.html#l" target="_blank">L</a>|
+		<a href="contents/pinyin.html#m" target="_blank">M</a>|
+		<a href="contents/pinyin.html#n" target="_blank">N</a>|
+		<a href="contents/pinyin.html#o" target="_blank">O</a>|
+		<a href="contents/pinyin.html#p" target="_blank">P</a>|
+		<a href="contents/pinyin.html#q" target="_blank">Q</a>|
+		<a href="contents/pinyin.html#r" target="_blank">R</a>|
+		<a href="contents/pinyin.html#s" target="_blank">S</a>|
+		<a href="contents/pinyin.html#t" target="_blank">T</a>|
+		<a href="contents/pinyin.html#u" target="_blank">U</a>|
+		<a href="contents/pinyin.html#v" target="_blank">V</a>|
+		<a href="contents/pinyin.html#w" target="_blank">W</a>|
+		<a href="contents/pinyin.html#x" target="_blank">X</a>|
+		<a href="contents/pinyin.html#y" target="_blank">Y</a>|
+		<a href="contents/pinyin.html#z" target="_blank">Z</a>
+		</p>
+		<h2><a href="contents/recommend.html" target="_blank">推荐</a></h2>
+	</section>
+	<section id="section3">
+		<h1><a href="contents/recommend.html" target="_blank">推荐</a></h1>
+		<div class="bookcard-box bookcard-gridmode">
+			<a href="book/r/115925754.html" class="bookcard" target="_blank">
+				<img src="book/cover/115925754.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">韵狐之歌</p>
+							<p class="bookcard-author">作者不详</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
+					</div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-本简介由本文作者编写-<br>杀戮即是罪，但亦为救赎。欲望是恶，但亦为善……<br>人时常会被某种力量吞噬，但每个人都期待被拯救。人心有时候能被轻易控制，但更多时候是自由而无法控制的。我们能理性的面对一切，但理性的边缘往往是悬崖……<br>……这是个“斩妖师”与妖狐的简单故事，也是场奇异的邂逅。原本要斩杀妖狐的“斩妖师”却发现这个绝色妖媚的妖狐怀着身孕。风逸俊冷的“斩妖师”从未被情色所动过，但此刻，他的刀却停留在了空中……<br>“斩妖师”是否会因为这只特别的妖狐而背离他的天职？最后会是人净化妖还是妖吞噬人呢？</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">49,997 <span class="booksize-more">+890</span></P>
+						<P class="bookcard-info2">时间不详</P>
+						<P class="bookcard-info2">完结</P>
+					</div>
+				</div>
+			</a>
+			<a href="book/r/514875312.html" class="bookcard" target="_blank">
+				<img src="book/cover/default.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">迷茫都市</p>
+							<p class="bookcard-author">兔子头</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
+					</div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-暂无简介-</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">11,550 <span class="booksize-more">+0</span></P>
+						<P class="bookcard-info2">2023-11-14</P>
+						<P class="bookcard-info2">完结</P>
+					</div>
+				</div>
+			</a>
+			<a href="book/r/117237465.html" class="bookcard" target="_blank">
+				<img src="book/cover/default.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">早知如此，一定当初</p>
+							<p class="bookcard-author">作者不详</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
+					</div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-本简介由初霁编写-<br>陈斯鹏，记不清多少次次相亲失败，女助理说他“是个gay，他绝对是个gay！”；杜北燕，说“我永远都不会把自己嫁出去。”，速战速决尽早谈崩吓跑相亲对象，十一场连胜。<br>但当两人相遇，也许会产生奇妙的反应。<br>爱不是一碗水，而是一条河流，如果在哪里断掉了，会有人把他接下去的。</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">256,412 <span class="booksize-more">+0</span></P>
+						<P class="bookcard-info2">时间不详</P>
+						<P class="bookcard-info2">完结</P>
+					</div>
+				</div>
+			</a>
+			<a href="book/r/510921786.html" class="bookcard" target="_blank">
+				<img src="book/cover/510921786.jpg" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">关于我重生到异界却不断怀孕还给包子们找了一堆爸爸这件事</p>
+							<p class="bookcard-author">yunona</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
+					</div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-本简介由本文作者编写-<br>男凌小雨出门买泡面意外被车撞到了异世界。标准轻小说开局。<br>变身龙傲天，后宫佳丽三千?<br>不，他变成了萝莉。<br>转职成为圣骑士，维护正义战魔神?<br>不，他变成了奶妈<br>胸大一甩奶四方，被当镇族之宝供起来?<br>不，他变成了怀孕专用绒布球。<br>这究竟是人性的扭曲还是道德的沦丧?请看《关于我重生到异界却不断怀孕还给包子们找了一堆爸爸这件事》系列</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">未计算 <span class="booksize-more">+未知</span></P>
+						<P class="bookcard-info2">2021-02-28</P>
+						<P class="bookcard-info2">未知</P>
+					</div>
+				</div>
+			</a>
+			<a href="book/r/110287534.html" class="bookcard" target="_blank">
+				<img src="book/cover/default.png" class="bookcard-cover">
+				<div class="bookcard-informationbox">
+					<div class="bookcard-infobox">
+						<div class="bookcard-info">
+							<p class="bookcard-title">养一只小奶猫</p>
+							<p class="bookcard-author">作者不详</p>
+						</div>
+						<div class="bookcard-rightmask"></div>
+					</div>
+					<div class="bookcard-introductionbox">
+						<p class="bookcard-introduction">-本简介由初霁编写-<br>百丹谷中住着一位被从丹城逐出的天才少年——丹鬼白术。<br>这天，为了炼制一枚丹药，他外出寻找一味稀有的草药。于是，就阴差阳错地“捡”了一个女婴，把她带回了百丹阁，取名叫“白芷”。<br>但是——<br>他记得他明明是把她当女儿养的啊……<br>事情是怎么变成这样的呢？</p>
+						<div class="bookcard-intromask"></div>
+					</div>
+					<div class="bookcard-info2box">
+						<P class="bookcard-info2">7,331 <span class="booksize-more">+0</span></P>
+						<P class="bookcard-info2">时间不详</P>
+						<P class="bookcard-info2">未完</P>
+					</div>
+				</div>
+			</a>
+		</div>
+		<p style="text-align:center;"><a href="recommend.html"><big><b>查看更多推荐</b></big></a></p>
+	</section>
+</div>
+<div class="main-sidebox">
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h">云野图书馆</div>
+		<div class="main-sidebox-siteicon-pic"></div>
+		<p class="main-sidebox-section-text">愿集百家之言</p>
+	</div>
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h"><i class="fas fa-link"></i>友情链接</div>
+		<script>sidebox_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+	</div>
+</div>
+</div>
+	<footer>
+		<div class="footer-linear-gradient"></div>
+		<div class="footer-top">云野</div>
+		<div class="footer-main">
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-list"></i>公告</div>
+				<script>footer_notice();lib_footer_notice();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-link"></i>友情链接</div>
+				<script>footer_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+		</div>
+		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 2024 Pregantain All.All rights reserved.<br>云野2024版权所有。保留所有权利。</noscript></div>
+	</footer>
 	<header class="flex-header flex-header-hide" id="FlexHeader">
 		<div class="header-main">
 			<ul class="header-left">
@@ -80,147 +282,5 @@
 		</script>
 		<a href="#" class="back-to-top"></a>
 	</nav>
-<div class="main-flex">
-<div class="main-box">
-	<section id="section0">
-		<div class="section0-box1">
-			<div class="s-b-1-1">云野</div>
-			<div class="s-b-1-2">Pregantain All</div>
-		</div>
-		<div class="section0-box2">
-			<div class="s-b-2-1"><b>Lib</b></div>
-			<div class="s-b-2-2">图书馆</div>
-		</div>
-		<div class="section0-bottom">不要金山银山，只要书山至此!</div>
-		<div class="section0-bottom-add">书目数量：<font class="section0-bottom-add-hlnum"><script>lib_booksnum();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></font>本</div>
-	</section>
-	<section id="section1">
-		<h1>贡献</h1>
-		<h2>提供书籍</h2>
-		<p>联系方式：<br><script>connect_way("图书馆_提供书籍");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p>
-		<h2>书籍纠错/换源</h2>
-		<p>联系方式：<br><script>connect_way("图书馆_书籍纠错/换源");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p>
-	</section>
-	<section id="section2">
-		<h1>索引</h1>
-		<h2><a href="contents/pinyin.html" target="_blank">拼音排序</a></h2>
-		<center>
-		<a href="contents/pinyin.html#a" target="_blank">A</a>|
-		<a href="contents/pinyin.html#b" target="_blank">B</a>|
-		<a href="contents/pinyin.html#c" target="_blank">C</a>|
-		<a href="contents/pinyin.html#d" target="_blank">D</a>|
-		<a href="contents/pinyin.html#e" target="_blank">E</a>|
-		<a href="contents/pinyin.html#f" target="_blank">F</a>|
-		<a href="contents/pinyin.html#g" target="_blank">G</a>|
-		<a href="contents/pinyin.html#h" target="_blank">H</a>|
-		<a href="contents/pinyin.html#i" target="_blank">I</a>|
-		<a href="contents/pinyin.html#j" target="_blank">J</a>|
-		<a href="contents/pinyin.html#k" target="_blank">K</a>|
-		<a href="contents/pinyin.html#l" target="_blank">L</a>|
-		<a href="contents/pinyin.html#m" target="_blank">M</a>|
-		<a href="contents/pinyin.html#n" target="_blank">N</a>|
-		<a href="contents/pinyin.html#o" target="_blank">O</a>|
-		<a href="contents/pinyin.html#p" target="_blank">P</a>|
-		<a href="contents/pinyin.html#q" target="_blank">Q</a>|
-		<a href="contents/pinyin.html#r" target="_blank">R</a>|
-		<a href="contents/pinyin.html#s" target="_blank">S</a>|
-		<a href="contents/pinyin.html#t" target="_blank">T</a>|
-		<a href="contents/pinyin.html#u" target="_blank">U</a>|
-		<a href="contents/pinyin.html#v" target="_blank">V</a>|
-		<a href="contents/pinyin.html#w" target="_blank">W</a>|
-		<a href="contents/pinyin.html#x" target="_blank">X</a>|
-		<a href="contents/pinyin.html#y" target="_blank">Y</a>|
-		<a href="contents/pinyin.html#z" target="_blank">Z</a>
-		</center>
-	</section>
-	<section id="section3">
-		<h1>推荐</h1>
-		<h2>忽见好书值一看</h2>
-		<div class="book-box-section">
-			<a class="book-box" target="_blank" href="book/r/115237465.html">
-				<img src="book/cover/default.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title-scroll">早知如此，一定当初</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">作者不详</p></div>
-						<div class="book-box-finish">完结</div>
-						<div class="book-box-date">时间不详</div>
-						<div class="book-box-size-box"><p class="book-box-size">776943<font class="book-box-size-more">+0</font></p></div>
-					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction-scroll">-本简介由初霁编写-<br>陈斯鹏，记不清多少次次相亲失败，女助理说他“是个gay，他绝对是个gay！”；杜北燕，说“我永远都不会把自己嫁出去。”，速战速决尽早谈崩吓跑相亲对象，十一场连胜。<br>但当两人相遇，也许会产生奇妙的反应。<br>爱不是一碗水，而是一条河流，如果在哪里断掉了，会有人把他接下去的。</p></div>
-				</div>
-			</a>
-			<a class="book-box" target="_blank" href="book/r/113925754.html">
-				<img src="book/cover/113925754.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title">韵狐之歌</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">作者不详</p></div>
-						<div class="book-box-finish">完结</div>
-						<div class="book-box-date">时间不详</div>
-						<div class="book-box-size-box"><p class="book-box-size">153037<font class="book-box-size-more">+?</font></p></div>
-					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction-scroll">-本简介由本文作者编写-<br>杀戮即是罪，但亦为救赎。欲望是恶，但亦为善……<br>人时常会被某种力量吞噬，但每个人都期待被拯救。人心有时候能被轻易控制，但更多时候是自由而无法控制的。我们能理性的面对一切，但理性的边缘往往是悬崖……<br>……这是个“斩妖师”与妖狐的简单故事，也是场奇异的邂逅。原本要斩杀妖狐的“斩妖师”却发现这个绝色妖媚的妖狐怀着身孕。风逸俊冷的“斩妖师”从未被情色所动过，但此刻，他的刀却停留在了空中……<br>“斩妖师”是否会因为这只特别的妖狐而背离他的天职？最后会是人净化妖还是妖吞噬人呢？</p></div>
-				</div>
-			</a>
-			<a class="book-box" target="_blank" href="book/r/111843678.html">
-				<img src="book/cover/default.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title">废弃仓库</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">作者不详</p></div>
-						<div class="book-box-finish">完结</div>
-						<div class="book-box-date">时间不详</div>
-						<div class="book-box-size-box"><p class="book-box-size">37579<font class="book-box-size-more">+0</font></p></div>
-					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction">-暂无简介-</p></div>
-				</div>
-			</a>
-		</div>
-	<h2>持书待更心有叹</h2>
-		<div class="book-box-section">
-			<a class="book-box" target="_blank" href="book/r/110287534.html">
-				<img src="book/cover/default.png" class="book-box-cover">
-				<div class="book-box-main">
-					<div class="book-box-title-box"><p class="book-box-title">养一只小奶猫</p></div>
-					<div class="book-box-info-box">
-						<div class="book-box-author-box"><p class="book-box-author">作者不详</p></div>
-						<div class="book-box-finish">连载</div>
-						<div class="book-box-date">时间不详</div>
-						<div class="book-box-size-box"><p class="book-box-size">22134<font class="book-box-size-more">+0</font></p></div>
-					</div>
-					<div class="book-box-introduction-box"><p class="book-box-introduction-scroll">-本简介由初霁编写-<br>百丹谷中住着一位被从丹城逐出的天才少年——丹鬼白术。<br>这天，为了炼制一枚丹药，他外出寻找一味稀有的草药。于是，就阴差阳错地“捡”了一个女婴，把她带回了百丹阁，取名叫“白芷”。<br>但是——<br>他记得他明明是把她当女儿养的啊……<br>事情是怎么变成这样的呢？</p></div>
-				</div>
-			</a>
-		</div>
-	</section>
-</div>
-<div class="main-sidebox">
-	<div class="main-sidebox-section">
-		<div class="main-sidebox-section-h">云野图书馆</div>
-		<div class="main-sidebox-siteicon-pic"></div>
-		<p class="main-sidebox-section-text">愿集百家之言</p>
-	</div>
-	<div class="main-sidebox-section">
-		<div class="main-sidebox-section-h"><i class="fas fa-link"></i>友情链接</div>
-		<script>sidebox_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
-	</div>
-</div>
-</div>
-	<footer>
-		<div class="footer-linear-gradient"></div>
-		<div class="footer-top">云野</div>
-		<div class="footer-main">
-			<div class="footer-section">
-				<div class="footer-section-h"><i class="fas fa-list"></i>公告</div>
-				<script>footer_notice();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
-			</div>
-			<div class="footer-section">
-				<div class="footer-section-h"><i class="fas fa-link"></i>友情链接</div>
-				<script>footer_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
-			</div>
-		</div>
-		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 云野.All Rights Reserved.<br>Copyright © Pregantain All Group.All rights reserved.<br>云野版权所有。保留所有权利。</noscript></div>
-	</footer>
 </body>
 </html>
