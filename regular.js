@@ -72,10 +72,10 @@ function sidebox_notice() {
 	text_print("愿为一片净土");
 }
 function footer_links() {
-	text_print("<a href='https://pixiv.net'>Pixiv</a><br><a href='https://www.writing.com'>writing.com</a><br><a href='http://parea.great-site.net'>云之境</a><br>");
+	text_print("<a href='http://parea.great-site.net'>云之境</a><a href='http://pabbs.great-site.net'>论坛</a><br><a href='https://dgfiles.vercel.app/zh-CN/'>Pregnant Lover DataBase</a><a href='https://pldbmirror.destoryg.top/'>备用站</a><br><a href='https://pixiv.net'>Pixiv</a><br><a href='https://www.writing.com'>writing.com</a><br>");
 }
 function sidebox_links() {
-	text_print("<p class='main-sidebox-section-text'><a href='https://pixiv.net'>Pixiv</a></p><p class='main-sidebox-section-text'><a href='https://www.writing.com'>writing.com</a></p><p class='main-sidebox-section-text'><a href='http://parea.great-site.net'>云之境</a></p>");
+	text_print("<p class='main-sidebox-section-text'><a href='http://parea.great-site.net'>云之境</a><a href='http://pabbs.great-site.net'>论坛</a></p><p class='main-sidebox-section-text'><a href='https://dgfiles.vercel.app/zh-CN/'>Pregnant Lover DataBase</a><a href='https://pldbmirror.destoryg.top/'>备用站</a></p><p class='main-sidebox-section-text'><a href='https://pixiv.net'>Pixiv</a></p><p class='main-sidebox-section-text'><a href='https://www.writing.com'>writing.com</a></p>");
 }
 function copyright() {
 	text_print("Copyright © 2022-2024 云野.All Rights Reserved.<br>Copyright © 2022-2024 Pregantain All.All rights reserved.<br>云野2022-2024版权所有。保留所有权利。")
