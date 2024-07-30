@@ -24,3 +24,12 @@ function lib_sidebox_goodworks() {
 function lib_pabbs_LICENSE_pmcl() {
 	text_print('<a target="_blank" href="http://parea.great-site.net/parea/137/pmcl/">《云之境内容共享协议》</a>')
 }
+function addsth (str){
+	switch (str){
+	case "图书馆":
+		text_print('<h2>提供书籍</h2><p>联系方式：<br><script>connect_way("图书馆_提供书籍");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p><h2>书籍纠错/换源</h2><p>联系方式：<br><script>connect_way("图书馆_书籍纠错/换源");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p><h2>投稿书籍简介</h2><p>联系方式：<br><script>connect_way("图书馆_简介投稿");</script><noscript>这里需要使用 JavaScript 进行加载！</noscript></p>');
+		break;
+	default:
+		text_print("<font color=#ff0000;>error: unknown str input<br></font>");
+	}
+}
