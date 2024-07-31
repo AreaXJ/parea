@@ -55,11 +55,14 @@ function text_print (str){
 }
 function connect_way (str){
 	switch (str){
-	case "资源库_提供资源":
+	case "图书馆_提供书籍":
 		text_print("<font color=#ff0000;>error: no data<br></font>");
 		break;
-	case "资源库_资源纠错/换源":
+	case "图书馆_书籍纠错/换源":
 		text_print("<font color=#ff0000;>error: no data<br></font>");
+		break;
+	case "图书馆_简介投稿":
+		text_print("<font color=#3264ff;>GitHub提交issue（推荐）或pr（不推荐）<br>E-mail:areaxj@outlook.com（不推荐）<br><a href='http://pabbs.great-site.net/index.php/board,3.0.html'>云之境论坛交流区</a>发帖投稿（推荐）<br></font>");
 		break;
 	default:
 		text_print("<font color=#ff0000;>error: unknown str input<br></font>");
